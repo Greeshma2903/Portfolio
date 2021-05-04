@@ -1,0 +1,5 @@
+navbar - flex (row for desktop, column for mobile, space between)
+{
+    nav-header - flex (for mobile- row with space between)
+    nav-links - flex(for mobile-column, for desktop-row)
+}
