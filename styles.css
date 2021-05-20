@@ -325,6 +325,7 @@ body {
 /* <------------------------------------------- projects ----------------------------------------------> */
 #projects {
     margin: 30% 0;
+    padding: 10px;
 }
 
 #projects .project-container {
@@ -348,6 +349,7 @@ body {
 .card-head h3 {
     font-weight: 500;
     padding: 10px 0;
+    word-wrap: break-word;
 }
 
 hr {
@@ -369,7 +371,7 @@ hr {
 }
 
 .proj-img{
-    width: 300px;
+    width: 270px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
@@ -392,6 +394,70 @@ hr {
     width: 2.4rem;
 }
 
+/* <------------------------------------------- contact ----------------------------------------------> */
+#cta {
+    background-color: var(--very-dark-blue);
+    padding: 2rem 10%;
+}
+
+#cta .heading {
+    color: var(--pastel-yellow);
+    margin-bottom: 2rem;
+}
+
+#cta form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cta input, #cta textarea {
+    font-family: var(--f-head);
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+input.cta-submit {
+    background-color: var(--pastel-yellow);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+input.cta-submit:hover {
+    box-shadow: 2px 2px 30px var(--purple);
+    color: var(--dark-purple);
+    transition: all 0.2s linear;
+}
+
+footer {
+    background-color: var(--dark-purple);
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 0 1rem;
+}
+
+footer #connect {
+    margin-bottom: 2rem;
+}
+#connect > a {
+    color: var(--white);
+}
+
+#connect > a:hover{
+    color: var(--very-dark-blue);
+}
+
+#connect .connect-icons {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+footer .copyright {
+    font-size: 12px;
+}
 /* =======================================================================================
     media queries 
 ========================================================================================== */
@@ -602,7 +668,7 @@ hr {
 /* <------------------------------------------- projects ----------------------------------------------> */
 @media screen and (min-width: 1000px) {
     #projects {
-        margin: 17% 10% 15%;
+        margin: 17% 10% 13%;
     }
 
     #projects .project-container {
@@ -611,4 +677,10 @@ hr {
         align-items: center;
         justify-content: space-evenly;
     }
+
+    .proj-img {
+        width: 300px;
+    }
 }
+
+/* <------------------------------------------- contact ----------------------------------------------> */
